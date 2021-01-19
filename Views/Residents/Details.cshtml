@@ -1,0 +1,66 @@
+﻿@model DNCHK_K1159610.Models.Resident
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Resident</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.First_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.First_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Last_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Last_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedicalCondition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedicalCondition)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

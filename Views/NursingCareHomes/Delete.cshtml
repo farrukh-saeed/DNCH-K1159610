@@ -1,0 +1,64 @@
+﻿@model DNCHK_K1159610.Models.NursingCareHome
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>NursingCareHome</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Registration_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Registration_Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Full_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Full_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Home_Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Home_Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.No_Of_Rooms)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.No_Of_Rooms)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

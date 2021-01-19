@@ -1,0 +1,58 @@
+﻿@model DNCHK_K1159610.Models.NursingCareHome
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NursingCareHome</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Registration_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Registration_Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Full_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Full_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Home_Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Home_Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.No_Of_Rooms)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.No_Of_Rooms)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NursingCareHomeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

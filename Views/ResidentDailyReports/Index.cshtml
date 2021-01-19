@@ -1,0 +1,45 @@
+﻿@model IEnumerable<DNCHK_K1159610.Models.ResidentDailyReport>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Daily_Report_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Report_Details)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Care_Staff_Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Daily_Report_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Report_Details)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Care_Staff_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ResidentDailyReportID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ResidentDailyReportID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ResidentDailyReportID })
+        </td>
+    </tr>
+}
+
+</table>

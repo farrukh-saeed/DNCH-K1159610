@@ -1,0 +1,42 @@
+﻿@model DNCHK_K1159610.Models.ResidentDailyReport
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ResidentDailyReport</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Daily_Report_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Daily_Report_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Report_Details)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Report_Details)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Care_Staff_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Care_Staff_Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ResidentDailyReportID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
